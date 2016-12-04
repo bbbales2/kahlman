@@ -17,7 +17,7 @@ D = 0.5
 dt = 0.01
 
 t = 0.0
-T = 2000 * dt
+T = 200 * dt
 
 xs = []
 xhs = []
@@ -25,7 +25,7 @@ zs = []
 ss = []
 
 while t <= T:
-    F = 0.0#numpy.sin(t) / 2.0
+    F = 1.0#numpy.sin(t) / 2.0
 
     dx = F * x * dt + C * numpy.random.randn() * numpy.sqrt(dt)
     dz = G * x * dt + D * numpy.random.randn() * numpy.sqrt(dt)
